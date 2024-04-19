@@ -12,10 +12,101 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <script type="module" src="dist/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/rcpAdd.css">
+    <link rel="stylesheet" href="css/rcpList.css">
+    <link rel="stylesheet" href="css/rcpEdit.css">
+
+    <script type="module" src="dist/dataBaseRcp.js"></script>
 </head>
 
 <body>
+
+    <section id="login">
+        <div class="loginContainer">
+            <h2>Prisijunkite arba užsiregistruokite</h2>
+            <input id="emailInput" type="email" placeholder="El. paštas">
+            <input id="passwordInput" type="password" placeholder="Slaptažodis">
+            <div id="loginError"></div>
+            <div class="loginButtons">
+                <button id="logInBtn">Prisijungti</button>
+                <button id="signUpBtn">Registruotis</button>
+            </div>
+        </div>
+    </section>
+    <section id="rcpAdd">
+        <button id="newRcpBtn">Įtraukti naują Receptą</button>
+        <div id="rcpAddContainer">
+            <div class="inputContainer">
+                <label for="rcpNameInput"><i class="fa-solid fa-tag"></i></label>
+                <input id="rcpNameInput" type="text" placeholder="Recepto pavadinimas">
+            </div>
+            <div class="inputContainer">
+                <label for="rcpCookingTimeInput"><i class="fa-solid fa-clock"></i></label>
+                <input id="rcpCookingTimeInput" type="text" placeholder="Gaminimo trukmė">
+            </div>
+            <div class="inputContainer">
+                <label for="rcpDescription"><i class="fa-solid fa-kitchen-set"></i></label>
+                <textarea id="rcpDescription" placeholder="Gaminimo eiga" rows="15"></textarea>
+            </div>
+            <div class="rcpAddButtons">
+                <button id="addRcpBtn">Išsaugoti receptą</button>
+                <button id="clearBtn">Išvalyti</button>
+                <button id="closeBtn">Uždaryti</button>
+            </div>
+        </div>
+    </section>
+    <section id="rcpList">
+        <div id="rcpListContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recepto pavadinimas</th>
+                        <th>Gaminimo trukmė</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- <tr>
+                        <td>Lazanija su jautiena ir daržovėmis</td>
+                        <td>1 val.</td>
+                    </tr>
+                    <tr>
+                        <td>Štrudelis su varške</td>
+                        <td>5 val.</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="rcpEdit">
+        <div id="rcpEditContainer">
+            <h2>Redaguojamas receptas</h2>
+            <div class="inputContainer">
+                <label for="rcpNameEditInput"><i class="fa-solid fa-tag"></i></label>
+                <input id="rcpNameEditInput" type="text" placeholder="Recepto pavadinimas">
+            </div>
+            <div class="inputContainer">
+                <label for="rcpCookingTimeEditInput"><i class="fa-solid fa-clock"></i></label>
+                <input id="rcpCookingTimeEditInput" type="text" placeholder="Gaminimo trukmė">
+            </div>
+            <div class="inputContainer">
+                <label for="rcpDescriptionEdit"><i class="fa-solid fa-kitchen-set"></i></label>
+                <textarea id="rcpDescriptionEdit" placeholder="Gaminimo eiga" rows="15"></textarea>
+            </div>
+            <div class="rcpEditButtons">
+                <button id="editRcpBtn">Atnaujinti receptą</button>
+                <button id="clearEditBtn">Išvalyti</button>
+                <button id="deleteEditBtn">Ištrinti receptą</button>
+            </div>
+        </div>
+    </section>
 
 </body>
 

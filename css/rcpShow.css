@@ -1,0 +1,46 @@
+#allRecipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHeader{
+    text-align: center;
+    margin: 40px;
+}
+
+#recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe {
+    width: 80%;
+    line-height: 1.5;
+    border: none;
+    border: 2px solid #B0A299;
+    border-radius: 10px;
+    color: #4B4033;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.rcpName {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration:underline;
+    line-height: 1.5;
+}
+
+.p {
+    text-decoration: underline;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.rcpCookingTime {
+    line-height: 1.5;
+}

@@ -1,0 +1,35 @@
+#rcpList {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #4B4033;
+    padding: 4px 8px;
+}
+
+td {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #4B4033;
+    padding: 4px 8px;
+}
+
+#tableBody tr {
+    background-color: #F5F3F4;
+    color: #4B4033;
+    cursor: pointer;
+}
+#tableBody tr:hover {
+    background-color: #D3C1B6;
+}
