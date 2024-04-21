@@ -8,7 +8,7 @@
 }
 
 #rcpEditContainer {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,4 +28,18 @@
 
 #rcpNameEditInput::before {
     content: "\f02b";
+}
+
+@media (max-width: 800px) {
+    #rcpEditContainer {
+        width: 90%;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    #rcpEditContainer {
+        width: 100%;
+    }
 }

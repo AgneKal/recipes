@@ -1,5 +1,5 @@
 #rcpList {
-    width: 70%;
+    width: 80%;
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -32,4 +32,29 @@ td {
 }
 #tableBody tr:hover {
     background-color: #D3C1B6;
+}
+
+@media (max-width: 800px) {
+    th {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    td {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 400px) {
+    th {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    td {
+        font-size: 14px;
+        font-weight: 400;
+    }
 }

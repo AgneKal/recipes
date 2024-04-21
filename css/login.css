@@ -30,3 +30,19 @@
     color: darkred;
     margin-bottom: 10px;
 }
+
+
+@media (max-width: 800px) {
+    .loginContainer {
+        width: 80%;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    .loginContainer {
+        width: 100%;
+
+    }
+}

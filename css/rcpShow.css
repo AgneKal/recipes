@@ -35,12 +35,56 @@
     line-height: 1.5;
 }
 
-.p {
-    text-decoration: underline;
-    margin-top: 15px;
-    line-height: 1.5;
-}
-
 .rcpCookingTime {
     line-height: 1.5;
+    font-size: 18px;
+}
+
+.rcpDescription {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .recipe {
+        width: 95%;
+        padding: 20px;
+    }
+    .rcpName {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+        line-height: 1.5;
+    }
+    .rcpCookingTime {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .rcpDescription {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipe {
+        padding: 10px;
+        }
+    .rcpName {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: underline;
+        line-height: 1.5;
+    }
+
+    .rcpCookingTime {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    .rcpDescription {
+        line-height: 1.5;
+        font-size: 14px;
+    }
 }

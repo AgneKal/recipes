@@ -82,3 +82,44 @@ label {
     width: 15%;
 }
 
+@media (max-width: 800px) {
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .fa-solid {
+        font-size: 24px;
+        padding-right: 5px;
+    }
+    input {
+        font-size: 14px;
+        padding: 4px 8px;   
+        margin-bottom: 16px;
+    }
+    textarea {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    button {
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .fa-solid {
+        font-size: 22px;
+        padding-right: 5px;
+    }
+    input {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin-bottom: 16px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+}
